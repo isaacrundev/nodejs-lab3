@@ -8,9 +8,9 @@ const readOthersRoutes = require("./routes/read-notes-left-by-others");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(homeRoutes);
+app.use("/", homeRoutes);
 app.use("/leave-a-note", leaveANoteRoutes);
-app.use(readOthersRoutes);
+app.use("/read-notes-left-by-others", readOthersRoutes);
 
 const port = process.env.port || 7777;
 app.listen(port, () => {
