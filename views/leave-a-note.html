@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/main.css" />
     <title>Leave a Note</title>
   </head>
   <body>
-    <h1>Read From Others</h1>
-    <form action="/leave-a-note" method="POST">
-      <input type="text" name="add-new" placeholder="Text here" /><button>
-        Leave note
-      </button>
+    <h1>Leave a Note</h1>
+    <form action="/submit" method="POST">
+      <input type="text" name="addNew" placeholder="Text here" />
+      <button type="submit">Leave note</button>
     </form>
   </body>
 </html>
